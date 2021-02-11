@@ -1,0 +1,350 @@
+.main__top {
+  padding: 4.375rem 0.25rem 0 0.25rem;
+
+  @include resolve(lg) {
+    padding: 0;
+  }
+
+  &_inner {
+    max-width: 1228px;
+    margin: 0 auto;
+
+    .main__slider {
+      img {
+        width: 100%;
+        max-height: 26.875rem;
+      }
+    }
+
+    .main__content_wrap {
+      transition: left 3s ease;
+      @include resolve(lg) {
+        padding: 0 1rem;
+      }
+      .main__content {
+        padding: 3.125rem 0 4.375rem 0;
+        justify-content: space-between;
+
+        @include resolve(sm) {
+          justify-content: center;
+        }
+
+        .main__proposal {
+          @include resolve(sm) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            order: 1;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    aside {
+      max-width: 42.35%;
+
+      @include resolve(sm) {
+        max-width: 100%;
+      }
+
+      .main__text {
+        padding-bottom: 2.5rem;
+
+        @include resolve(sm) {
+          text-align: center;
+          padding-top: 2rem;
+        }
+
+        @include resolve(lg) {
+          padding-bottom: 2em;
+        }
+
+        h2 {
+          font-family: SFProDisplay, sans-serif;
+          font-weight: 400;
+          font-size: 1.6875em;
+          line-height: 2rem;
+
+          @include resolve(lg) {
+            line-height: 1.5;
+          }
+        }
+      }
+
+      .main__button {
+        padding-bottom: 1.25rem;
+        @include resolve(sm) {
+          padding-bottom: 0.5rem;
+        }
+        @include resolve(lg) {
+          padding-bottom: 1rem;
+        }
+
+        .user-proposal__btn {
+          width: 280px;
+          height: 44px;
+          cursor: pointer;
+          font-family: SFProText, sans-serif;
+          font-weight: 500;
+        }
+      }
+
+      .main__agreement {
+        font-family: SFProText, sans-serif;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        margin: 0;
+        color: rgba(196, 196, 196, 1);
+
+        @include resolve(sm) {
+          display: flex;
+          flex-wrap: nowrap;
+          font-size: 8px;
+        }
+
+        @include resolve(lg) {
+          font-size: 0.875em;
+        }
+
+        p {
+          margin: 0;
+
+          &:last-child {
+            @include resolve(sm) {
+              margin-left: 0.25rem;
+            }
+          }
+        }
+      }
+    }
+
+    .main__article_wrap {
+      width: 57.65%;
+      text-align: justify;
+      line-height: 19px;
+      font-family: "SFProText", sans-serif;
+      max-width: 708px;
+
+      @include resolve(sm) {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      span {
+        font-weight: 500;
+
+        > a {
+          color: rgba(210, 0, 28, 1);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .main-other {
+    padding-bottom: 4.375rem;
+
+    @include resolve(sm) {
+      padding-bottom: 2rem;
+    }
+
+    h2 {
+      position: relative;
+      font-size: 1.5rem;
+      font-family: SFProText, sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.48px;
+
+      &:after {
+        content: "";
+        width: 75%;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        background: rgba(0, 0, 0, 1);
+        opacity: 0.1;
+
+        @include resolve(md) {
+          display: none;
+        }
+        @include resolve(lg) {
+          width: 69%;
+          right: 0;
+          top: 56%;
+        }
+      }
+    }
+
+    &__links {
+      font-size: 14px;
+
+      &_inner {
+        max-width: 1126px;
+        justify-content: space-between;
+        padding-top: 3.125rem;
+        font-family: SFProDisplay, sans-serif;
+        color: rgba(77, 77, 77, 1);
+
+        @include resolve(sm) {
+          max-width: 100%;
+          padding-top: 1rem;
+          display: block;
+          font-size: 14px;
+
+          > div {
+            padding: 0.5rem 0;
+            width: 100%;
+          }
+        }
+
+        @include resolve(md) {
+          flex-direction: column;
+
+          > div {
+            padding: 0.5rem 0;
+          }
+        }
+      }
+
+      &-item {
+        position: relative;
+        cursor: pointer;
+
+        @include resolve(md) {
+          display: inline-flex;
+        }
+
+        a {
+          border-bottom: 1px solid rgba(77, 77, 77, 1);
+        }
+        &:hover {
+          a {
+            color: rgba(210, 0, 28, 1);
+            border-bottom: 1px solid rgba(210, 0, 28, 1);
+          }
+
+          .arrow {
+            background: rgba(210, 0, 28, 1);
+          }
+        }
+
+        .arrow_wrap {
+          margin-left: 0.9375rem;
+          position: relative;
+          top: 4px;
+
+          @include resolve(sm) {
+            margin-left: 0.5rem;
+          }
+
+          @include resolve(lg) {
+            top: 2px;
+          }
+
+          .rigth-side {
+            top: 7px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main__bottom_wrap {
+  background: rgba(249, 249, 249, 1);
+
+  .main__bottom_inner {
+    padding: 4.375rem 8.5625rem;
+
+    @include resolve(sm) {
+      padding: 2rem 2.625rem;
+    }
+
+    @include resolve(lg) {
+      padding: 3.375rem 2.625rem;
+    }
+
+    h2 {
+      font-family: SFProDisplay, sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+    }
+
+    .video-title_wrap {
+      justify-content: space-between;
+    }
+
+    .nav-btns_wrap {
+      .nav-btns {
+        width: 40px;
+        height: 39px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(229, 229, 229, 1);
+        border-radius: 0 6px 6px 0;
+        cursor: pointer;
+
+        &:nth-child(1) {
+          transform: rotate(180deg);
+        }
+        &:hover {
+          .arrow {
+            background: rgba(210, 0, 28, 1);
+          }
+        }
+      }
+
+      .arrow-down {
+        width: 32%;
+        height: 30%;
+      }
+
+      .arrow {
+        width: 0.875rem;
+      }
+
+      .left-side {
+        top: 0;
+      }
+
+      .right-side {
+        top: 9px;
+        left: 0;
+      }
+    }
+
+    .main-video_inner {
+      padding-top: 3.75rem;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      overflow: hidden;
+
+      @include resolve(lg) {
+        padding-top: 2.75rem;
+      }
+
+      .main-video__item {
+        min-width: 54.0386%;
+        height: 319px;
+        max-height: 20rem;
+        padding-right: 4.1875rem;
+
+        @include resolve(sm) {
+          min-width: 100%;
+          height: 319px;
+          max-height: 14rem;
+          padding-right: 0;
+        }
+
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
