@@ -1,11 +1,11 @@
 Структура проекта:
-├── src
-│   ├── blocks
-│   ├── fonts
-│   ├── img
-│   ├── js
-│   ├── styles
-│   ├── views
+-/src
+  -/blocks
+  -/fonts
+  -/img
+  -/js
+  -/styles
+  -/views
 
 Папка src — используется во время разработки:
 - БЭМ-блоки: src/blocks
