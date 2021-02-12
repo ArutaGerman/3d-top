@@ -124,8 +124,13 @@
       width: 57.65%;
       text-align: justify;
       line-height: 19px;
+      letter-spacing: -0.7px;
       font-family: "SFProText", sans-serif;
       max-width: 708px;
+
+      @include resolve (lg){
+        letter-spacing: 0;
+      }
 
       @include resolve(sm) {
         width: 100%;
@@ -258,7 +263,7 @@
   background: rgba(249, 249, 249, 1);
 
   .main__bottom_inner {
-    padding: 4.375rem 8.5625rem;
+    padding: 4.375rem 6.4375rem;
 
     @include resolve(sm) {
       padding: 2rem 2.625rem;
@@ -276,6 +281,10 @@
 
     .video-title_wrap {
       justify-content: space-between;
+      padding: 0 2.125rem;
+      @include resolve (md){
+      padding: 0;
+      }
     }
 
     .nav-btns_wrap {
@@ -328,10 +337,11 @@
       }
 
       .main-video__item {
-        min-width: 54.0386%;
+        width: 100%;
+        min-width: 50%;
         height: 319px;
         max-height: 20rem;
-        padding-right: 4.1875rem;
+        padding: 0 2.125rem;
 
         @include resolve(sm) {
           min-width: 100%;

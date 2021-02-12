@@ -15,8 +15,8 @@
   z-index: 101;
   background: rgba(255, 255, 255, 1);
 }
-//MOBILE header
 
+//MOBILE header
 .h-mobile_wrap {
   @include resolve(sm) {
     font-size: 10px;
