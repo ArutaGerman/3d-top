@@ -197,7 +197,7 @@
           max-width: 100%;
           padding-top: 1rem;
           display: block;
-          font-size: 14px;
+          font-size: 0.75rem;
 
           > div {
             padding: 0.5rem 0;
@@ -276,7 +276,7 @@
     h2 {
       font-family: SFProDisplay, sans-serif;
       font-weight: 400;
-      font-size: 2rem;
+      font-size: 1.6875rem;
     }
 
     .video-title_wrap {
@@ -284,6 +284,10 @@
       padding: 0 2.125rem;
       @include resolve (md){
       padding: 0;
+      }
+
+      .video-title__title{
+        align-items: center
       }
     }
 
@@ -347,7 +351,11 @@
           min-width: 100%;
           height: 319px;
           max-height: 14rem;
-          padding-right: 0;
+          padding: 0;
+        }
+
+        @include resolve(md) {
+          padding: 0 0.5rem
         }
 
         iframe {
